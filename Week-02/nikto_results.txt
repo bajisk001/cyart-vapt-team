@@ -1,5 +1,5 @@
 - Nikto v2.5.0/
-+ Target Host: 192.168.56.102
++ Target Host: 192.168.x.x
 + Target Port: 80
 + GET /: Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10.
 + GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
