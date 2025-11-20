@@ -1,4 +1,4 @@
-# Nmap 7.95 scan initiated Thu Nov 20 01:58:58 2025 as: /usr/lib/nmap/nmap --privileged -sV -sC -O -oN metasploitable_scan.txt 192.168.56.102
+# Nmap 7.95 scan initiated Thu Nov 20 01:58:58 2025 as: /usr/lib/nmap/nmap --privileged -sV -sC -O -oN metasploitable_scan.txt 192.168.x.x
 mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
 Nmap scan report for 192.168.56.102
 Host is up (0.00082s latency).
