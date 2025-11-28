@@ -1,0 +1,65 @@
+# Nmap 7.95 scan initiated Fri Nov 27 23:06:20 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -p 21,22,23,80,139,445,3306,8180 -oN nmap.txt 192.168.56.102
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.56.102
+Host is up (0.00053s latency).
+
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.x.x
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)
+|_  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)
+23/tcp   open  telnet      Linux telnetd
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+|_http-title: Metasploitable2 - Linux
+|_http-server-header: Apache/2.2.8 (Ubuntu) DAV/2
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.0.51a-3ubuntu5
+|   Thread ID: 8
+|   Capabilities flags: 43564
+|   Some Capabilities: Support41Auth, SupportsCompression, SupportsTransactions, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, ConnectWithDatabase, LongColumnFlag
+|   Status: Autocommit
+|_  Salt: XF7!=Q^e`3{3-%o&h]zm
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+|_http-favicon: Apache Tomcat
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Apache Tomcat/5.5
+MAC Address: 08:00:27:3A:19:69 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 2h29m57s, deviation: 3h32m07s, median: -2s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_smb2-time: Protocol negotiation failed (SMB2)
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.20-Debian)
+|   Computer name: metasploitable
+|   NetBIOS computer name: 
+|   Domain name: localdomain
+|   FQDN: metasploitable.localdomain
+|_  System time: 2025-11-28T12:36:32-05:00
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov 28 23:06:41 2025 -- 1 IP address (1 host up) scanned in 21.15 seconds
