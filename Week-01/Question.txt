@@ -1,0 +1,76 @@
+Theoretical Knowledge
+1. Understanding Security Assessment
+Objective: Learn how to evaluate systems without paid tools.
+Explanation:
+Security Assessment: Identify weaknesses using frameworks (e.g., NIST guidelines).
+Types of Security Testing:
+Vulnerability Assessment: Use tools like OpenVAS (open-source vulnerability scanner).
+Penetration Testing: Simulate attacks with Kali Linux tools (Metasploit, Nmap).
+Compliance Testing: Validate against standards using checklists (e.g., CIS Benchmarks).
+2. VAPT Methodology
+Objective: Follow a structured approach using methodologies.
+Explanation:
+Phases:
+Planning: Define scope with tools like Dradis CE.
+Discovery: Use Nmap (network scanning) and OWASP ZAP (web app scanning).
+Attack: Exploit vulnerabilities with Metasploit Framework.
+Reporting: Use templates from "Pentest-Tools".
+How to Learn: Practice the OWASP Web Security Testing Framework.
+3. Security Standards & Compliance
+Objective: Align with regulations using resources.
+Explanation:
+Standards: GDPR, HIPAA, ISO 27001.
+How to Learn: Use the OWASP Top 10 to prioritize web vulnerabilities.
+4. Risk Assessment Basics
+Objective: Prioritize vulnerabilities with scoring systems.
+Explanation:
+CVSS Calculator: Use the NVD CVSS Calculator .
+Risk Matrix: Categorize risks as High/Medium/Low using spreadsheets (Google Sheets/Excel).
+5. Common Vulnerabilities
+Objective: Identify flaws in labs/tools.
+Explanation:
+Network Vulnerabilities: Misconfigurations, open ports (use Nmap).
+Web Vulnerabilities: SQLi, XSS (practice on OWASP Juice Shop).
+How to Learn: Use labs to understand the practical approach:
+Metasploitable (intentionally vulnerable VM).
+VulnHub (vulnerable machines).
+6. Documentation Fundamentals
+Objective: Create reports with tools.
+Explanation:
+Tools:
+Dradis CE (collaborative reporting).
+CherryTree (note-taking for technical findings).
+You can use anything standard reporting tool of your own too
+How to Learn: Use free templates from GitHub.
+Practical Application
+1. Setup Testing Environment
+Steps:
+Install Kali Linux.
+Download Metasploitable 3 (vulnerable VM) from GitHub.
+Configure VirtualBox to host VMs.
+2. Vulnerability Scanning
+Tools:
+OpenVAS (integrated in Kali Linux).
+Nikto (web server scanner).
+Steps:
+Scan Metasploitable with OpenVAS:
+sudo openvas-start  # Launch OpenVAS  
+Analyze results (e.g., CVSS scores, CVE IDs).
+3. Document Findings
+Tools:
+Spreadsheets (Google Sheets/Excel) for vulnerability tracking.
+Screenshots
+Steps:
+Record:
+IP addresses, ports, services.
+Vulnerability descriptions (e.g., "Apache Tomcat outdated").
+4. Practice Risk Assessment
+Steps:
+Use the CVSS Calculator to score vulnerabilities.
+Prioritize risks using a 3x3 matrix (Likelihood vs. Impact).
+5. Create Basic Reports
+Summarize sources consulted for each topic and Submit a Comprehensive Report as PDF File
+Structure your report:
+Executive Summary: High-level risks.
+Technical Details: Screenshots, CVSS scores.
+Remediation: Patch links, configuration fixes.
